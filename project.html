@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Personal Web Showcase</title>
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background-color: #08d2fa;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header {
+            background: url("images/profile.jpg") no-repeat center/cover;
+            color: rgb(24, 9, 230);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* #available {
+            text-align: centre;
+            color: red;
+            -webkit-margin-top-collapse: 0;
+        } */
+
+        .about img {
+            float: right;
+            margin-left: 20px;
+            border-radius: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: calc(5);
+            margin-top: 20px;
+            background-color: beige;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #3108e7;
+            color: rgb(180, 5, 255);
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #fafcfa;
+            transition: transform 0.25s ease;
+            cursor: zoom-in;
+
+        }
+
+        .gallery img:active {
+            -webkit-transform: scale(4);
+            transform: scale(4);
+            cursor: zoom-out;
+        }
+
+        .gallery {
+            text-align: center;
+        }
+
+        blockquote,
+        q {
+            font-style: italic;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .map {
+            display: block;
+            margin: 20px auto;
+            float: left;
+        }
+
+        .bhadra{
+            
+            width: 500;
+            float: left;
+
+        }
+        .samal {
+            float: bottom;
+            color: rgb(11, 23, 247);
+            font-style: italic;
+            font-size: medium;
+            font-weight: bolder;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#available">Availability</a>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home">
+        <h1>Welcome to My Personal Web Showcase</h1>
+        <p>This is a static website built using only HTML and internal CSS.</p>
+        <!-- HTML comment: Welcome message and background image -->
+        <blockquote>
+            "The best way to predict the future is to invent it."
+            <cite> – Alan Kay</cite>
+        </blockquote>
+        <p><q>Knowledge is power.</q></p>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="Assets/BHADRA P[H-min.jpg" alt="My Profile" width="150" height="150" />
+        <p>
+            Hello! I'm a web enthusiast learning how to build stunning webpages
+            using HTML and CSS. I enjoy exploring new tech and creating useful
+            projects.
+        </p>
+        <p>
+           <b>Hobby</b> Exploring internet,Travelling ,listening Music and playing Indoor Games
+        </p>
+
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Beginner</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>My Gallery</h2>
+        <div class="gallery">
+            <img src="Assets/Screenshot_2023-05-27-06-28-29-763_lockscreen~2.jpg" alt="Myself"
+                title="Bhadra Prasad Samal" />
+            <img src="Assets/puri.jpg" alt="Clickable Map" title="Puri" usemap="#map" />
+            <img src="Assets/ram temple.jpg" alt="Another Shot" title="T20 World CUP" />
+            <img src="Assets/Screenshot (36).png" alt="Map Again" title="Ram Temple" />
+        </div>
+        <map name="map">
+            <area shape="rect" coords="50,50,250,250" href="#contact" alt="Jump to Contact" />
+        </map>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="bhadra">
+            <!-- <a href="https://maps.app.goo.gl/WXgj3bqhd2FLfmzE7" target="_blank"> -->
+            <!-- <img class="map" src="Assets/16509523.png" width="100" height="100" alt="My Location"> -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d27415.525088072678!2d85.37071734648012!3d20.445440787932412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDI2JzQzLjYiTiA4NcKwMjMnMjguNyJF!5e1!3m2!1sen!2sin!4v1745600954907!5m2!1sen!2sin"
+                width="300" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="samal">Name: Bhadra Prasad Samal 
+                <div>E-Mail:prasadsamal2019@gmail.com </div>
+                <div>Phone: 6372972501</div>
+            </div>
+                
+        
+        </div>
+    </section>
+    
+    <section id="available">
+        <!-- <h2>Availability</h2> -->
+
+        <table>
+            <tr>
+                <th>Day</th>
+                <th colspan="2">Availability</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>10 AM</td>
+                <td>4 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>10 AM</td>
+                <td>4 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>10 AM</td>
+                <td>4 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>10 AM</td>
+                <td>4 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>10 AM</td>
+                <td>4 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td colspan="2">10 AM-4 PM</td>
+                <!-- <td>4 PM</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">Sunday</td>
+                <td colspan="2">Not Available</td>
+            </tr>
+            <tr>
+                <td>Evening</td>
+                <td>6 PM - 8 PM</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>Created with love & passion using HTML & CSS</p>
+    </footer>
+</body>
+
+</html>
