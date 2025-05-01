@@ -1,0 +1,38 @@
+body {
+    background-color: aqua;
+}
+/* property:-In CSS (Cascading Style Sheets), a property is a characteristic or attribute that defines how an element should be styled or displayed on a web page. Each property is paired with a value to specify the exact styling.
+property value is that which attached to th property */
+h1 {
+    color: aliceblue;
+    text-align: center;
+    background-color: lawngreen;
+    /* used for headings background coloring */
+}
+/* selector :- A CSS selector is a pattern used to select the elements you want to style within a web page*/
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 300;
+    color: blue;
+    /* font family means letter style */
+
+}
+/* Declaration block */
+
+#selector {
+    text-align:center;
+    color:blueviolet;
+}
+
+ol.categories {
+    background-color: antiquewhite;
+    color: rgb(111, 247, 0);
+    text-align: center;
+}
+ol.categories li.simple {
+    color: brown;
+}
+ul li.simple {
+    color: burlywood;
+}
